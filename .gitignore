@@ -1,0 +1,48 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Training logs
+*.log
+
+# Model weights. Each checkpoint is ~280–330 MB, above GitHub's 100 MB file limit.
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# Clinical images and derived overlays stay on this machine.
+# GitHub is not a store for patient photos, and the sets are many gigabytes.
+data/raw/
+data/curated/My_Dataset/
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.bmp
+*.dcm
+*.nii
+*.nii.gz
+
+# Packaged copies of the same work (several archives are over 100 MB).
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Regenerable JPEG preview caches + local review audit logs (patient paths)
+tools/original_data_cleanup/cache/
+tools/original_data_cleanup/logs/
+tools/ok1_cleanup/cache/
+tools/ok1_cleanup/logs/
+tools/ok1_ok2_overlap_review/cache/
+tools/ok1_ok2_overlap_review/logs/
